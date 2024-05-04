@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "vazir-bold";
+  src: url("/font/Vazir-Bold.woff");
+}
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-family: "vazir-bold";
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.997);
+}
+.navbar .navbar-toggler {
+  display: flex;
+}
+@media all and (min-width: 992px) {
+  .navbar .navbar-toggler {
+    display: none;
+  }
+}
+.navbar .textHeader {
+  font-size: 110%;
+}
+.navbar .navbar-brand {
+  width: 45%;
+  max-width: 150px;
+}
+@media all and (min-width: 768px) {
+  .navbar .navbar-brand {
+    width: auto;
+  }
+}
+
+.iconBar {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  background: rgba(119, 119, 119, 0.178);
+  color: rgb(12, 46, 96);
+  transition: all 0.2s ease-in-out;
+}
+
+.iconBar:hover {
+  background-color: #ffc107;
+  color: black;
+}
+
+.numbers {
+  margin-top: 100px;
+  background: linear-gradient(10deg, rgb(255, 68, 0), rgb(246, 145, 57));
+}
+
+.personalDiv {
+  max-width: 400px;
+}
+.personalDiv .card {
+  box-shadow: 0px 0px 5px 0px #888;
+  transition: all 0.3s ease-in-out;
+}
+.personalDiv .card:hover {
+  box-shadow: 0px 0px 15px 1px #888;
+}
+
+/*# sourceMappingURL=style.css.map */

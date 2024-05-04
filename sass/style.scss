@@ -1,0 +1,78 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+// ! font
+@font-face {
+    font-family: "vazir-bold";
+    src: url("/font/Vazir-Bold.woff");
+}
+
+// ! body
+body{
+    background-color: $bgMainColor;
+    font-family: "vazir-bold";
+
+}
+
+// !navbar
+.navbar{
+  background-color: rgba(255, 255, 255, 0.997);
+
+  // d-none in toggler
+  .navbar-toggler{
+    display: flex;
+  }
+  @media all and (min-width:992px) {
+    .navbar-toggler{
+      display: none;
+    }
+  }
+  .textHeader{
+    font-size: 110%;
+  }
+
+  .navbar-brand{
+    width: 45%;
+    max-width: 150px;
+  }
+  @media all and (min-width:768px) {
+    .navbar-brand{
+      width: auto;
+    }
+  }
+}
+
+// ! cards
+.iconBar{
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    background:  rgba(119, 119, 119, 0.178);
+    color:  rgb(12, 46, 96);
+    transition: all 0.2s ease-in-out;
+}
+.iconBar:hover{
+background-color: #ffc107;
+color: black;
+}
+
+
+// ! numbers
+.numbers{
+  margin-top: 100px;
+  background: linear-gradient(10deg,rgb(255, 68, 0),rgb(246, 145, 57));
+  // box-shadow: rgba(255, 68, 0, 0.452) 0px 10px 10px 1px;
+}
+
+// ! personal
+.personalDiv{
+  max-width: 400px;
+
+  .card{
+    box-shadow: 0px 0px 5px 0px #888;
+    transition: all 0.3s ease-in-out;
+  }
+  .card:hover{
+    box-shadow: 0px 0px 15px 1px #888;
+  }
+}
